@@ -1,0 +1,71 @@
+CREATE DATABASE QuanLyQuanCafe
+GO
+
+USE QuanLyQuanCafe
+
+-- Food
+-- Table
+-- FoodCategory
+-- Account
+-- Bill
+-- BillInfo
+
+CREATE TABLE CoffeeTable
+(
+	id INT IDENTITY PRIMARY KEY,
+	name NVARCHAR(100) NOT NULL DEFAULT N'unNamed',
+	status NVARCHAR(100) NOT NULL DEFAULT N'empty'  -- Troong || co nguoi
+)
+Go
+
+CREATE TABLE Account
+(
+	UserName NVARCHAR(100) PRIMARY KEY, 
+	DisplayName NVARCHAR(100) NOT NULL DEFAULT N'member',
+	PassWord NVARCHAR(1000) NOT NULL DEFAULT 0,
+	Type INT NOT NULL DEFAULT 0          -- 1:admin && 0: staff
+)
+GO
+
+CREATE TABLE CoffeeCategory
+(
+	id INT IDENTITY PRIMARY KEY,
+	DisplayName NVARCHAR(100) NOT NULL DEFAULT N'unNamed'
+)
+GO
+
+CREATE TABLE Coffee
+(
+	id INT IDENTITY PRIMARY KEY,
+	DisplayName NVARCHAR(100) NOT NULL DEFAULT N'unNamed',
+	idCategory INT NOT NULL,
+	price FLOAT NOT NULL DEFAULT 0
+
+	FOREIGN KEY (idCategory) REFERENCES dbo.coffeeCategory(id)
+)
+GO
+
+CREATE TABLE Bill
+(
+	id INT IDENTITY PRIMARY KEY,
+	DateCheckIn DATE NOT NULL DEFAULT GETDATE(),
+	DateCheckOut DATE,
+	idTable INT NOT NULL,
+	status INT NOT NULL DEFAULT 0     -- 1 la dax thanh toan && 0 la chua thanh toan
+
+	FOREIGN KEY (idTable) REFERENCES dbo.CoffeeTable(id)
+)
+GO
+
+CREATE TABLE BillInfo
+(
+	id INT IDENTITY PRIMARY KEY,
+	idBill INT NOT NULL,
+	idCoffee INT NOT NULL,
+	count INT NOT NULL DEFAULT 0
+
+	FOREIGN KEY (idBill) REFERENCES dbo.Bill(id),
+	FOREIGN KEY (idCoffee) REFERENCES dbo.Coffee(id)
+)
+GO
+

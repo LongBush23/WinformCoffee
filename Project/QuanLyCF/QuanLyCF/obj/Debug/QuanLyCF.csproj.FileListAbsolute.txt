@@ -1,0 +1,10 @@
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\bin\Debug\QuanLyCF.exe.config
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\bin\Debug\QuanLyCF.exe
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\bin\Debug\QuanLyCF.pdb
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\obj\Debug\QuanLyCF.csprojAssemblyReference.cache
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\obj\Debug\QuanLyCF.flogin.resources
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\obj\Debug\QuanLyCF.Properties.Resources.resources
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\obj\Debug\QuanLyCF.csproj.GenerateResource.cache
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\obj\Debug\QuanLyCF.csproj.CoreCompileInputs.cache
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\obj\Debug\QuanLyCF.exe
+E:\hoctap\dotnet\CUOIKY\Project\QuanLyCF\QuanLyCF\obj\Debug\QuanLyCF.pdb
